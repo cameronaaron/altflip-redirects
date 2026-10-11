@@ -1,0 +1,13 @@
+{
+  "name": "altflip-redirects",
+  "private": true,
+  "type": "module",
+  "license": "AGPL-3.0-or-later",
+  "scripts": {
+    "test": "node --test",
+    "package": "zip -r altflip-redirects.zip manifest.json *.js *.html *.png"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

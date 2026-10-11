@@ -1,0 +1,63 @@
+{
+  "manifest_version": 3,
+  "name": "AltFlip Redirects",
+  "version": "1.3.0",
+  "description": "Automatically redirect social media to privacy-friendly alternative frontends. Supports Twitter, YouTube, Medium, Quora, IMDb, Fandom, Reddit, TikTok, and Imgur.",
+  "author": "AltFlip",
+  "homepage_url": "https://github.com/cameronaaron/altflip-redirects",
+  "permissions": [
+    "declarativeNetRequest",
+    "storage"
+  ],
+  "options_page": "options.html",
+  "host_permissions": [
+    "*://twitter.com/*",
+    "*://*.twitter.com/*",
+    "*://x.com/*",
+    "*://*.x.com/*",
+    "*://xcancel.com/*",
+    "*://nitter.tiekoetter.com/*",
+    "*://nitter.net/*",
+    "*://youtube.com/*",
+    "*://*.youtube.com/*",
+    "*://youtu.be/*",
+    "*://piped.video/*",
+    "*://piped.kavin.rocks/*",
+    "*://invidious.projectsegfau.lt/*",
+    "*://medium.com/*",
+    "*://*.medium.com/*",
+    "*://scribe.rip/*",
+    "*://quora.com/*",
+    "*://*.quora.com/*",
+    "*://quetre.pussthecat.org/*",
+    "*://imdb.com/*",
+    "*://*.imdb.com/*",
+    "*://libremdb.iket.me/*",
+    "*://libremdb.pussthecat.org/*",
+    "*://fandom.com/*",
+    "*://*.fandom.com/*",
+    "*://breezewiki.com/*",
+    "*://reddit.com/*",
+    "*://*.reddit.com/*",
+    "*://safereddit.com/*",
+    "*://tiktok.com/*",
+    "*://*.tiktok.com/*",
+    "*://proxitok.pussthecat.org/*",
+    "*://imgur.com/*",
+    "*://*.imgur.com/*",
+    "*://rimgo.pussthecat.org/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "AltFlip Redirects"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
